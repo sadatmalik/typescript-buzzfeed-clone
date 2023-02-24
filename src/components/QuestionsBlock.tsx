@@ -7,7 +7,7 @@ const QuestionsBlock = ({quizItem} : {
 }) => {
     return (
         <>
-            <h2 id={String(quizItem.id)}>{quizItem.text}</h2>
+            <h2 className="title-block" id={String(quizItem.id)}>{quizItem.text}</h2>
             <div className="questions-container">
                 {quizItem?.questions.map((question: Question, _index) => (
                     <QuestionBlock

@@ -24,7 +24,7 @@ const App = () => {
     console.log(quiz)
 
     return (
-          <div>
+          <div className="app">
               <Title title={quiz?.title} subtitle={quiz?.subtitle}/>
               {quiz?.content.map((content: Content, id: Content['id']) => (
                   <QuestionsBlock
